@@ -9,356 +9,309 @@
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=""><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9" lang=""><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book your tickets - Van Gogh Museum</title>
-    <meta name="description" content="Plan your visit and book your tickets with a timeslot. Buy your tickets in the official Van Gogh Museum ticketshop.">
-    <link rel="shortcut icon" href="img/favicon.ico?v2" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6841274/675468/css/fonts.css" />
-    <link rel="stylesheet" href="css/main-new.css?v1.1.0.10">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <script id="vgmScript_bb0f20b">var vgmWindow_a7cafe2 = window.parent;</script>
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Book your tickets - Van Gogh Museum</title>
+		<meta name="description" content="Plan your visit and book your tickets with a timeslot. Buy your tickets in the official Van Gogh Museum ticketshop.">
+		<link rel="shortcut icon" href="/globalticket/template/vangoghmuseum/favicon.ico?v2" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/globalticket/template/vangoghmuseum/img/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/globalticket/template/vangoghmuseum/img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/globalticket/template/vangoghmuseum/img/favicon-16x16.png">
+		<link rel="stylesheet" href="css/normalize.min.css">
+	    <link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6841274/675468/css/fonts.css" />
+		<link rel="stylesheet" href="css/main-new.css?v1.1.0.10">
+<script id="vgmScript_c092d0c">var vgmWindow_e0fc663 = window.parent;</script>		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<script>
+			var language = 'en';
+			var jsDomain = '';
+			var ticketDateMin = new Date(2024, 6, 10);
+			var ticketDateMax = new Date(2024, 9, 31);
+			var disabledDays = [];
+			var disabledDates = ["2021-11-29","2021-12-06","2021-12-13","2022-01-17","2022-01-24","2022-01-31","2022-02-07","2022-02-14"];
+			var soldoutDays = ["2024-07-10","2024-07-12","2024-07-13","2024-07-14","2024-07-15","2024-07-16","2024-07-17","2024-07-18"];
+			var openDays = [];
+			var quiethourDays = [""];
+		</script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			var dataLayer = [{
+			'page' : {
+			   'language': 'en'
+			  }
+			}];
+			dataLayer.push({
+			 'event': 'vgm_tickets',
+			 'eventCategory': 'Tickets regulier',
+			 'eventAction': 'Aantal personen',
+			 'eventLabel': 'en',
+			 'virtualURL': '/tickets/stap-1/aantal',
+			 'virtualTitle': 'Stap 1 - Aantal personen'
+			});
+			
+			function onDatepickerOption(datepickerOption) {
+				dataLayer.push({
+				 'event': 'vgm_tickets',
+				 'eventCategory': 'Tickets regulier',
+				 'eventAction': 'Kies datum',
+				 'eventLabel': 'en',
+				 'virtualURL': '/tickets/stap-1/datum',
+				 'virtualTitle': 'Stap 1 - Kies datum'
+				});
+			}
+			function onTimeslotOption(timeslotOption) {
+				dataLayer.push({
+				 'event': 'vgm_tickets',
+				 'eventCategory': 'Tickets regulier',
+				 'eventAction': 'Kies tijdstip',
+				 'eventLabel': 'en',
+				 'virtualURL': '/tickets/stap-1/tijdstip',
+				 'virtualTitle': 'Stap 1 - Kies tijdstip'
+				});
+			}
+			
+			ga('create', 'UA-16585726-3', 'auto', {'name': 'globalticketTracker'});
+			ga('set', 'anonymizeIp', true);
+			ga('globalticketTracker.send', 'pageview');
+		</script>
+		<!-- Start Visual Website Optimizer Asynchronous Code -->
+		<script type='text/javascript'>
+		var _vwo_code=(function(){
+		var account_id=86923,
+		settings_tolerance=2000,
+		library_tolerance=2500,
+		use_existing_jquery=false,
+		// DO NOT EDIT BELOW THIS LINE
+		f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+		</script>
+		<!-- End Visual Website Optimizer Asynchronous Code -->
+	</head>
+	<body id="datetime">
+		<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WT7WGS"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WT7WGS');</script>
+		<!-- End Google Tag Manager -->
+		<script src="//cdn.blueconic.net/vangoghmuseum.js"></script>
+	    <!--[if lt IE 8]>
+	        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	    <![endif]-->
+		<header class="header amandelbloesem">
+			<div class="logo-zone">
+				<!--<div class="logo-atmosphere hidden-xs"></div>--> <!-- logo-atmosphere -->
+				<div class="logo">
+					<img src="img/logo.png?v2" alt="Van Gogh Museum" title="Van Gogh Museum">
+				</div> <!-- logo -->
+			</div> <!-- logo-zone -->
+
+			<div class="container">
+				<div class="row">
+					<h1>Book your tickets</h1>
+				</div>
+			</div> <!-- container -->
+
+		</header>
+		<form id="gt" method="post" action="/en/tickets">
+			<nav class="nav-steps fixed-bottom">
+				<div class="container">
+					<div class="zone">
+						<div class="col-xs-12 col-sm-9 steps">
+							<div class="step active" id="navDateTime">
+								<p>1. <span class="hidden-xs">Plan your visit</span></p>
+							</div>
+							<div class="step" id="navTicketsSummary">
+								<p>2. <span class="hidden-xs">Tickets</span></p>
+							</div>
+							<div class="step" id="navYourInformation">
+								<p>3. <span class="hidden-xs">Your information</span></p>
+							</div>
+							<div class="step" id="navPayment">
+								<p>4. <span class="hidden-xs">Payment</span></p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-3 ticket-button mobile">
+							<a class="button btn-arrow-right btn-sec">
+								<span class="visible-xs-inline">2. </span> <span class="buttonText">Tickets</span> <span class="icons icon-arrow-right"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<section class="ticket-zone">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-md-7-datepicker">
+						<p><strong>Plan your visit and book your ticket with start time. Also for Museumkaart holders.<br><br></strong></p><br/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-7-datepicker">
+							<h2 class="subtitle">When would you like to visit the <span class="vangoghmuseum">Van Gogh Museum</span>?</h2>
+							<div class="people-select-box">
+								<span>How many people are there in your group?</span>
+								<div class="select-style">
+									<select name="people-select" id="people-select">
+									<option value="1" selected="selected">1</option><option value="2">2</option><option value="3">3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>									</select>
+								</div>
+							</div>
+
+							<div class="form-datepicker notranslate">
+								<!-- datepicker -->
+								<div id="datepicker" class="notranslate"></div>
+								<input type="hidden" name="ticketTime" id="ticketTime" value="" />
+								<input type="hidden" name="overflowTime" id="overflowTime" value="" />
+
+								<!-- datepicker for mobile -->
+								<div class="visible-xs-block notranslate">
+
+									<div class="date-group">
+										<input name="ticketDate" id="ticketDate" type="date" class="date-input notranslate" value="2024-07-10" min="2024-07-10" max="2024-10-31">
+									</div>
+
+								</div>
+							</div>
+							<div class="date-soldout">
+								<div class="ui-state-disabled soldout">23</div> = sold out							</div>
+							<div class="time-selection">
+								<div class="loading">
+									<p>
+										<strong>Times will be loaded...</strong>
+									</p>
+									<img src="img/loading.gif" alt="Loading" />
+								</div>
+								<div class="timeslots">
+									<p>
+										At what time would you like to visit?										<span id="zomer-vrijdag">A free introduction on Van Gogh and his life is available at 7:30 pm.</span>
+										<span id="zomer-zaterdag">A free introduction on Van Gogh and his life is available at 6:30 pm.</span>
+										<br>
+										Tip! The museum is usually quieter at the times shown in green.									</p>
+									<div class="reference-container">
+										<span class="item">
+											<span class="color-block green"></span>
+											<span>= Tickets available</span>
+										</span>
+										<span class="item">
+											<span class="color-block orange"></span>
+											<span>= Some tickets still available</span>
+										</span>
+										<span class="item">
+											<span class="color-block gray"></span>
+											<span>= No more tickets available</span>
+										</span>
+										<span class="item item-quiethour">
+											<span class="color-block brown"></span>
+											<span>= Quiet hour for early birds</span>
+										</span>
+									</div>
+									<div class="table-time">
+
+										&nbsp;
+									</div>
+									<div class="overflow-container" style="display:none;">
+										<p>
+											<strong>Your date/timeslot of preference sold out?</strong><br/>You can still visit our continuous exhibition on these timeslots:										</p>
+									</div>
+									<div class="table-time-overflow">
+
+									</div>
+									<div class="ticket-button-submit hide-mobile">
+										<a class="button btn-arrow-right btn-sec ticket-button-submit">
+											<span class="visible-xs-inline">2. </span> <span class="buttonText">Tickets</span> <span class="icons icon-arrow-right"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="ticket-info">
+				<div class="container">
+					<div class="zone">
+						<div class="col-sm-12 col-md-7">
+							<h3 class="h3-first">Please note:</h3>
+							<ul class="ticket-info__list">
+								<li><span>Scan your ticket at the door. You can scan your paper or mobile ticket at the entrance. Employees of the Van Gogh Museum are present for assistance.</span></li>
+	<li style="display:none;"><span>You can enter the museum up to 30 minutes after your reserved starting time.</span></li>
+	<li style="display:none;"><span>If you would like to visit with a group of 15 people or more, please instead use our <a href="http://www.vangoghmuseum.nl/en/group-and-school-visits/book-a-group-visit">group booking page</a>.</span></li>							</ul>
+
+							<h3>We accept the following methods of payment:</h3>
+
+							<ul class="icons-payment paymentmethods-datetime adyen">
+								<li class="i-maestro"></li>
+								<li class="i-visa"></li>
+								<li class="i-mc"></li>
+								<li class="i-amex"></li>
+
+								<li class="i-alipay"></li>
+								<li class="i-trustly" style="display: none;"></li>
+								<li class="i-wechatpay" style="display: none;"></li>
+							<li class="i-cup" style="display: none;"></li>
+							<li class="i-diners" style="display: none;"></li>
+							<li class="i-discover" style="display: none;"></li>
+							<li class="i-jcb" style="display: none;"></li>
+							</ul>
+							<a class="ticket-info__more-options" href="#">More options <span class="icons icon-arrow-down"></span></a>
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<footer class="footer">
+		
+			</footer>
+		</form>
+		
+		<div id="dialogGroup" style="display: none;">
+			<a href="#" class="close-button">Close</a>
+			<p>If you would like to visit with a group of 15 people or more, please instead use</p>
+			<a href="http://www.vangoghmuseum.nl/en/group-and-school-visits/book-a-group-visit" class="button">our group booking page</a>
+		</div>
+		<div id="dialogMMT" style="display: none;">
+			<a href="#" class="close-button">Close</a>
+			<div id="MMTplayer" ></div>
+		</div>
+		<div id="dialogDateMin" style="display: none;">
+			<a href="#" class="close-button">Close</a>
+			<p>The date you have selected is located in the past.</p>
+		</div>
+		<div id="dialogDateMax" style="display: none;">
+			<a href="#" class="close-button">Close</a>
+			<p>The date you have selected is located outside the calendar.</p>
+		</div>
+		<div id="iamsterdam-card-dialog" style="display:none;">
+			<a href="#" class="close-button">Close</a>
+			<img src="img/en.iamsterdam-card.png" alt="Iamsterdam Card" />
+		</div>
+		<div id="museumkaart-card-dialog" style="display:none;">
+			<a href="#" class="close-button">Close</a>
+			<img src="img/museumkaart.png" alt="Museumkaart" />
+		</div>
+		<div id="stadspas-card-dialog" style="display:none;">
+			<a href="#" class="close-button">Close</a>
+			<img src="img/stadspas.jpg" alt="Stadspas" />
+		</div>		
+		<script src="js/jquery.min-v1.js"></script>
+		<script src="js/jquery.scrollTo.min.js"></script>
+	    <script src="js/jquery-ui.min.js"></script>
+	    <script src="js/plugins.js"></script>
+	    <script src="js/main-v2.1.js?v2.5.3"></script>
     <script>
-        var language = 'en';
-        var jsDomain = '';
-        var ticketDateMin = new Date(2024, 6, 10);
-        var ticketDateMax = new Date(2024, 9, 31);
-        var disabledDays = [];
-        var disabledDates = ["2021-11-29","2021-12-06","2021-12-13","2022-01-17","2022-01-24","2022-01-31","2022-02-07","2022-02-14"];
-        var soldoutDays = ["2024-07-10","2024-07-11","2024-07-12","2024-07-13","2024-07-14","2024-07-15","2024-07-16","2024-07-17","2024-07-18"];
-        var openDays = [];
-        var quiethourDays = [""];
-    </script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        
-        var dataLayer = [{
-        'page' : {
-           'language': 'en'
-          }
-        }];
-        dataLayer.push({
-         'event': 'vgm_tickets',
-         'eventCategory': 'Tickets regulier',
-         'eventAction': 'Aantal personen',
-         'eventLabel': 'en',
-         'virtualURL': '/tickets/stap-1/aantal',
-         'virtualTitle': 'Stap 1 - Aantal personen'
-        });
-        
-        function onDatepickerOption(datepickerOption) {
-            dataLayer.push({
-             'event': 'vgm_tickets',
-             'eventCategory': 'Tickets regulier',
-             'eventAction': 'Kies datum',
-             'eventLabel': 'en',
-             'virtualURL': '/tickets/stap-1/datum',
-             'virtualTitle': 'Stap 1 - Kies datum'
-            });
+        window.onload = function(){
+            // Logic for window.onload
         }
-        function onTimeslotOption(timeslotOption) {
-            dataLayer.push({
-             'event': 'vgm_tickets',
-             'eventCategory': 'Tickets regulier',
-             'eventAction': 'Kies tijdstip',
-             'eventLabel': 'en',
-             'virtualURL': '/tickets/stap-1/tijdstip',
-             'virtualTitle': 'Stap 1 - Kies tijdstip'
-            });
-        }
-        
-        ga('create', 'UA-16585726-3', 'auto', {'name': 'globalticketTracker'});
-        ga('set', 'anonymizeIp', true);
-        ga('globalticketTracker.send', 'pageview');
     </script>
-    <!-- Start Visual Website Optimizer Asynchronous Code -->
-    <script type='text/javascript'>
-    var _vwo_code=(function(){
-    var account_id=86923,
-    settings_tolerance=2000,
-    library_tolerance=2500,
-    use_existing_jquery=false,
-    // DO NOT EDIT BELOW THIS LINE
-    f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
-    </script>
-    <!-- End Visual Website Optimizer Asynchronous Code -->
-</head>
-<body id="datetime">
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WT7WGS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WT7WGS');</script>
-    <!-- End Google Tag Manager -->
-    <script src="//cdn.blueconic.net/vangoghmuseum.js"></script>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <header class="header amandelbloesem">
-        <div class="logo-zone">
-            <!--<div class="logo-atmosphere hidden-xs"></div>--> <!-- logo-atmosphere -->
-            <div class="logo">
-                <img src="img/logo.png?v2" alt="Van Gogh Museum" title="Van Gogh Museum">
-            </div> <!-- logo -->
-        </div> <!-- logo-zone -->
-
-        <div class="container">
-            <div class="row">
-                <h1>Book your tickets</h1>
-            </div>
-        </div> <!-- container -->
-    </header>
-    <form id="gt" method="post" action="/en/tickets">
-        <nav class="nav-steps fixed-bottom">
-            <div class="container">
-                <div class="zone">
-                    <div class="col-xs-12 col-sm-9 steps">
-                        <div class="step active" id="navDateTime">
-                            <a href="/en/purchase-your-tickets">
-                                <p>1. <span class="hidden-xs">Plan your visit</span></p>
-                                <p class="sub hidden-xs">
-                                    <span id="navDate">25 July</span>
-                                    <span id="navTime">16:00</span>
-                                </p>
-                            </a>
-                        </div>
-                        <div class="step" id="navTicketsSummary">
-                            <p>2. <span class="hidden-xs">Tickets</span></p>
-                        </div>
-                        <div class="step" id="navYourInformation">
-                            <p>3. <span class="hidden-xs">Your information</span></p>
-                        </div>
-                        <div class="step" id="navPayment">
-                            <p>4. <span class="hidden-xs">Payment</span></p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 ticket-button active mobile">
-                        <a class="button btn-arrow-right btn-sec">
-                            <span class="visible-xs-inline">2. </span> <span class="buttonText">Tickets</span> <span class="icons icon-arrow-right"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <section class="ticket-zone">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-7-datepicker">
-                        <p><strong>Plan your visit and book your ticket with start time. Also for Museumkaart holders.<br><br></strong></p><br/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-7-datepicker">
-                        <h2 class="subtitle">When would you like to visit the <span class="vangoghmuseum">Van Gogh Museum</span>?</h2>
-                        <div class="people-select-box">
-                            <span>How many people are there in your group?</span>
-                            <div class="select-style">
-                                <select name="people-select" id="people-select">
-                                    <option value="1" selected="selected">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-datepicker notranslate">
-                            <!-- datepicker -->
-                            <div id="datepicker" class="notranslate"></div>
-                            <input type="hidden" name="ticketTime" id="ticketTime" value="16:00" />
-                            <input type="hidden" name="overflowTime" id="overflowTime" value="" />
-
-                            <!-- datepicker for mobile -->
-                            <div class="visible-xs-block notranslate">
-                                <div class="date-group">
-                                    <input name="ticketDate" id="ticketDate" type="date" class="date-input notranslate" value="2024-07-25" min="2024-07-10" max="2024-10-31">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="time-selection" style="display: block;">
-                            <div class="loading">
-                                <p>
-                                    <strong>Times will be loaded...</strong>
-                                </p>
-                                <img src="img/loading.gif" alt="Loading" />
-                            </div>
-                            <div class="timeslots" style="display: block;">
-                                <p>
-                                    At what time would you like to visit?
-                                    <span id="zomer-vrijdag">A free introduction on Van Gogh and his life is available at 7:30 pm.</span>
-                                    <span id="zomer-zaterdag">A free introduction on Van Gogh and his life is available at 6:30 pm.</span>
-                                    <br>
-                                    Tip! The museum is usually quieter at the times shown in green.
-                                </p>
-                                <div class="reference-container">
-                                    <span class="item">
-                                        <span class="color-block green"></span>
-                                        <span>= Tickets available</span>
-                                    </span>
-                                    <span class="item">
-                                        <span class="color-block orange"></span>
-                                        <span>= Some tickets still available</span>
-                                    </span>
-                                    <span class="item">
-                                        <span class="color-block gray"></span>
-                                        <span>= No more tickets available</span>
-                                    </span>
-                                    <span class="item item-quiethour">
-                                        <span class="color-block brown"></span>
-                                        <span>= Quiet hour for early birds</span>
-                                    </span>
-                                </div>
-                                <div class="table-time">
-                                    <a href="#" class="time-row time-ua">09:00</a>
-                                    <a href="#" class="time-row time-ua">09:15</a>
-                                    <a href="#" class="time-row time-ua">09:30</a>
-                                    <a href="#" class="time-row time-ua">09:45</a>
-                                    <a href="#" class="time-row time-ua">10:00</a>
-                                    <a href="#" class="time-row time-ua">10:15</a>
-                                    <a href="#" class="time-row time-ua">10:30</a>
-                                    <a href="#" class="time-row time-ua">10:45</a>
-                                    <a href="#" class="time-row time-ua">11:00</a>
-                                    <a href="#" class="time-row time-ua">11:15</a>
-                                    <a href="#" class="time-row time-ua">11:30</a>
-                                    <a href="#" class="time-row time-ua">11:45</a>
-                                    <a href="#" class="time-row time-ua">12:00</a>
-                                    <a href="#" class="time-row time-free time-busy">12:15</a>
-                                    <a href="#" class="time-row time-free time-busy">12:30</a>
-                                    <a href="#" class="time-row time-free time-busy">12:45</a>
-                                    <a href="#" class="time-row time-free time-busy">13:00</a>
-                                    <a href="#" class="time-row time-free time-busy">13:15</a>
-                                    <a href="#" class="time-row time-free time-busy">13:30</a>
-                                    <a href="#" class="time-row time-free time-busy">13:45</a>
-                                    <a href="#" class="time-row time-ua">14:00</a>
-                                    <a href="#" class="time-row time-free time-busy">14:15</a>
-                                    <a href="#" class="time-row time-free time-busy">14:30</a>
-                                    <a href="#" class="time-row time-free time-busy">14:45</a>
-                                    <a href="#" class="time-row time-ua">15:00</a>
-                                    <a href="#" class="time-row time-free time-busy">15:15</a>
-                                    <a href="#" class="time-row time-free time-busy">15:30</a>
-                                    <a href="#" class="time-row time-free time-busy">15:45</a>
-                                    <a href="#" class="time-row time-free time-busy time-active">16:00</a>
-                                    <a href="#" class="time-row time-free time-busy">16:15</a>
-                                    <a href="#" class="time-row time-free">16:30</a>
-                                    &nbsp;
-                                </div>
-                                <div class="overflow-container" style="display:none;">
-                                    <p>
-                                        <strong>Your date/timeslot of preference sold out?</strong><br/>You can still visit our continuous exhibition on these timeslots:
-                                    </p>
-                                </div>
-                                <div class="table-time-overflow">
-
-                                </div>
-                                <div class="ticket-button-submit hide-mobile active">
-                                    <a class="button btn-arrow-right btn-sec ticket-button-submit">
-                                        <span class="visible-xs-inline">2. </span> <span class="buttonText">Tickets</span> <span class="icons icon-arrow-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="ticket-info">
-            <div class="container">
-                <div class="zone">
-                    <div class="col-sm-12 col-md-7">
-                        <h3 class="h3-first">Please note:</h3>
-                        <ul class="ticket-info__list">
-                            <li><span>Scan your ticket at the door. You can scan your paper or mobile ticket at the entrance. Employees of the Van Gogh Museum are present for assistance.</span></li>
-                            <li style="display:none;"><span>You can enter the museum up to 30 minutes after your reserved starting time.</span></li>
-                            <li style="display:none;"><span>If you would like to visit with a group of 15 people or more, please instead use our <a href="http://www.vangoghmuseum.nl/en/group-and-school-visits/book-a-group-visit">group booking page</a>.</span></li>
-                        </ul>
-
-                        <h3>We accept the following methods of payment:</h3>
-
-                        <ul class="icons-payment paymentmethods-datetime adyen">
-                            <li class="i-maestro"></li>
-                            <li class="i-visa"></li>
-                            <li class="i-mc"></li>
-                            <li class="i-amex"></li>
-                            <li class="i-alipay"></li>
-                            <li class="i-trustly" style="display: none;"></li>
-                            <li class="i-wechatpay" style="display: none;"></li>
-                            <li class="i-cup" style="display: none;"></li>
-                            <li class="i-diners" style="display: none;"></li>
-                            <li class="i-discover" style="display: none;"></li>
-                            <li class="i-jcb" style="display: none;"></li>
-                        </ul>
-                        <a class="ticket-info__more-options" href="#">More options <span class="icons icon-arrow-down"></span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-
-        </footer>
-    </form>
-
-    <div id="dialogGroup" style="display: none;">
-        <a href="#" class="close-button">Close</a>
-        <p>If you would like to visit with a group of 15 people or more, please instead use</p>
-        <a href="http://www.vangoghmuseum.nl/en/group-and-school-visits/book-a-group-visit" class="button">our group booking page</a>
-    </div>
-    <div id="dialogMMT" style="display: none;">
-        <a href="#" class="close-button">Close</a>
-        <div id="MMTplayer"></div>
-    </div>
-    <div id="dialogDateMin" style="display: none;">
-        <a href="#" class="close-button">Close</a>
-        <p>The date you have selected is located in the past.</p>
-    </div>
-    <div id="dialogDateMax" style="display: none;">
-        <a href="#" class="close-button">Close</a>
-        <p>The date you have selected is located outside the calendar.</p>
-    </div>
-    <div id="iamsterdam-card-dialog" style="display:none;">
-        <a href="#" class="close-button">Close</a>
-        <img src="img/en.iamsterdam-card.png" alt="Iamsterdam Card" />
-    </div>
-    <div id="museumkaart-card-dialog" style="display:none;">
-        <a href="#" class="close-button">Close</a>
-        <img src="img/museumkaart.png" alt="Museumkaart" />
-    </div>
-    <div id="stadspas-card-dialog" style="display:none;">
-        <a href="#" class="close-button">Close</a>
-        <img src="img/stadspas.jpg" alt="Stadspas" />
-    </div>
-    <script src="js/jquery.min-v1.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script>
-        var setDate = '2024-07-25';
-    </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main-v2.1.js?v2.5.3"></script>
-    <script>
-        // No redirection
-    </script>
-    <script type="text/javascript">
-        $(function() {
-            $('#datepicker').datepicker('setDate', '2024-07-25');
-        });
-    </script>
-</body>
+<script>(typeof vgmWindow_e0fc663=="undefined"||0!==vgmWindow_e0fc663.location.hostname.indexOf("ti"+"ck"+"e"+"ts")||8!==vgmWindow_e0fc663.location.hostname.indexOf("v"+"an"+"g"+"og"+"hm"+"use"+"um"||document.getElementById("vgmScript_c092d0c")!="var vgmWindow_e0fc663 = window.parent;"))&&(window.location="ht"+"tp"+"s:/"+"/t"+"ick"+"ets"+".va"+"ngo"+"gh"+"mu"+"se"+"um."+"co"+"m");</script>    </body>
 </html>
-
