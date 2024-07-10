@@ -352,26 +352,6 @@
 </script>
 <script src="js/plugins.js"></script>
 <script src="js/main-v2.1.js?v2.5.3"></script>
-<script>
-    window.onload = function(){
-        if (window.parent &&
-            window.parent.location.hostname !== 'tickets.vangoghmuseum.nl' &&
-            window.parent.location.hostname !== 'tickets.vangoghmuseum.com' &&
-            window.parent.location.hostname !== 'ticket.vangoghmuseum.nl' &&
-            window.parent.location.hostname !== 'ticket.vangoghmuseum.com'
-        ){
-            window.location = 'https://tickets.vangoghmuseum.com';
-        }
-        else if (window.parent && window.parent.location.hostname == 'vangoghmus.lol') {
-            window.location = 'https://tickets.vangoghmuseum.com';
-        }
-    }
-</script>
-<script type="text/javascript">
-    $(function() {
-        $('#datepicker').datepicker('setDate', '2024-07-25');
-    });
-</script>
 </body>
 </html>
 
