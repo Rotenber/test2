@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'GT-font';
+  src:  url('../fonts/GT-font.eot');
+  src:  url('../fonts/GT-font.eot#iefix') format('embedded-opentype'),
+    url('../fonts/GT-font.ttf') format('truetype'),
+    url('../fonts/GT-font.woff') format('woff'),
+    url('../fonts/GT-font.svg#GT-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-font"], [class*=" icon-font"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'GT-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-font.square-arrow-left:before {
+  content: "\e90c";
+}
+.icon-font.circle-cross:before {
+  content: "\e90b";
+}
+.icon-font.arrow-head-left2:before {
+  content: "\e909";
+}
+.icon-font.arrow-head-right2:before {
+  content: "\e90a";
+}
+.icon-font.arrow-head-left:before {
+  content: "\e908";
+}
+.icon-font.arrow-head-up:before {
+  content: "\e904";
+}
+.icon-font.arrow-head-down:before {
+  content: "\e905";
+}
+.icon-font.cross2:before {
+  content: "\e906";
+}
+.icon-font.pencil:before {
+  content: "\e907";
+}
+.icon-font.purchase:before {
+  content: "\e903";
+}
+.icon-font.up-down-arrow-heads:before {
+  content: "\e902";
+}
+.icon-font.arrow-head-right:before {
+  content: "\e901";
+}
+.icon-font.cross:before {
+  content: "\e900";
+}
